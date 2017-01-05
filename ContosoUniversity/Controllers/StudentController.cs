@@ -37,7 +37,7 @@ namespace ContosoUniversity.Controllers
                     students = students.OrderBy(s => s.LastName);
                     break;
             }
-            return View(db.Students.ToList());
+            return View(students.ToList());
         }
 
         // GET: Student/Details/5
